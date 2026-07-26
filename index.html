@@ -5,179 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Citron Co.</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
-        }
-
-        body{
-            background:#f8faf5;
-            color:#2d3b2d;
-        }
-
-        header{
-            background:white;
-            text-align:center;
-            padding:40px 20px;
-            box-shadow:0 2px 10px rgba(0,0,0,.08);
-        }
-
-        header h1{
-            font-size:52px;
-            color:#A7C957;
-            letter-spacing:2px;
-        }
-
-        header p{
-            margin-top:10px;
-            font-size:20px;
-            color:#666;
-        }
-
-        .shop-btn{
-            display:inline-block;
-            margin-top:30px;
-            background:#A7C957;
-            color:white;
-            padding:15px 35px;
-            border-radius:50px;
-            text-decoration:none;
-            font-size:18px;
-            transition:.3s;
-        }
-
-        .shop-btn:hover{
-            background:#90b548;
-        }
-
-        .products{
-            max-width:1200px;
-            margin:60px auto;
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:25px;
-            padding:20px;
-        }
-
-        .card{
-            background:white;
-            border-radius:20px;
-            padding:25px;
-            text-align:center;
-            box-shadow:0 5px 15px rgba(0,0,0,.08);
-            transition:.25s;
-        }
-
-        .card:hover{
-            transform:translateY(-8px);
-        }
-
-        .emoji{
-            font-size:60px;
-        }
-
-        h2{
-            margin:15px 0;
-        }
-
-        .price{
-            color:#7aa33e;
-            font-size:24px;
-            font-weight:bold;
-            margin-bottom:20px;
-        }
-
-        button{
-            background:#A7C957;
-            color:white;
-            border:none;
-            padding:12px 25px;
-            border-radius:30px;
-            cursor:pointer;
-            font-size:16px;
-        }
-
-        footer{
-            text-align:center;
-            padding:40px;
-            color:#777;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
-<h1>THE CITRON CO.</h1>
+    <div class="logo">
+        <img src="images/logo.png" alt="The Citron Co.">
+    </div>
 
-<p>Fresh Fruit Packs</p>
+    <div class="search">
+        <input type="text" placeholder="Search Products">
+    </div>
 
-<a href="#shop" class="shop-btn">Shop Now</a>
+    <button class="cart-button">
+        Cart
+        <span id="cart-count">0</span>
+    </button>
 
 </header>
 
-<section class="products" id="shop">
+<main>
 
-<div class="card">
+    <section id="products" class="products-grid">
 
-<div class="emoji">🍋</div>
+    </section>
 
-<h2>Lime 25 PCS</h2>
+</main>
 
-<div class="price">$40</div>
-
-<button>Add to Cart</button>
+<div id="cart-panel">
 
 </div>
 
-<div class="card">
-
-<div class="emoji">🍋</div>
-
-<h2>Lime 50 PCS</h2>
-
-<div class="price">$75</div>
-
-<button>Add to Cart</button>
-
-</div>
-
-<div class="card">
-
-<div class="emoji">🍊</div>
-
-<h2>Orange 25 PCS</h2>
-
-<div class="price">$50</div>
-
-<button>Add to Cart</button>
-
-</div>
-
-<div class="card">
-
-<div class="emoji">🍊</div>
-
-<h2>Orange 50 PCS</h2>
-
-<div class="price">$95</div>
-
-<button>Add to Cart</button>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 The Citron Co.
-
-</footer>
+<script src="script.js"></script>
 
 </body>
-
 </html>
