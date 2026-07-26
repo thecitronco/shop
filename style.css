@@ -1,4 +1,94 @@
-/* ==========================================
+/* HERO LANDING PAGE */
+
+.hero {
+
+    min-height: 100vh;
+
+    background: #0D2818;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+}
+
+
+.hero-logo {
+
+    width: 220px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.hero h1 {
+
+    font-size: 52px;
+
+    max-width: 900px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero p {
+
+    max-width: 650px;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    margin-bottom: 40px;
+
+}
+
+
+.shop-now {
+
+    background: #B6D084;
+
+    color: #0D2818;
+
+    text-decoration: none;
+
+    padding: 18px 45px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+
+.shop-now:hover {
+
+    opacity: 0.85;
+
+}
+
+
+/* SMOOTH SCROLL */
+
+html {
+
+    scroll-behavior: smooth;
+
+}/* ==========================================
    THE CITRON CO.
    style.css
    PART 1 OF 2
