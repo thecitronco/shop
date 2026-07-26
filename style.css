@@ -1,8 +1,8 @@
 /* ==========================================
    THE CITRON CO.
    style.css
+   PART 1 OF 2
 ========================================== */
-
 
 *{
     margin:0;
@@ -10,246 +10,95 @@
     box-sizing:border-box;
 }
 
-
 html{
     scroll-behavior:smooth;
 }
 
-
 body{
-
     font-family:Arial, Helvetica, sans-serif;
-
     background:#F8F8F6;
-
     color:#0D2818;
-
 }
-
-
-
-/* ---------- WELCOME SECTION ---------- */
-
-
-.hero{
-
-    background:#F8F8F6;
-
-    text-align:center;
-
-    padding:35px 30px 45px;
-
-}
-
-
-.hero-logo{
-
-    width:120px;
-
-    margin-bottom:15px;
-
-}
-
-
-.hero h1{
-
-    font-size:34px;
-
-    color:#0D2818;
-
-    margin-bottom:12px;
-
-    letter-spacing:-0.5px;
-
-}
-
-
-.hero p{
-
-    max-width:600px;
-
-    margin:0 auto 25px;
-
-    font-size:17px;
-
-    line-height:1.5;
-
-    color:#566246;
-
-}
-
-
-.shop-now{
-
-    display:inline-block;
-
-    background:#B6D084;
-
-    color:#0D2818;
-
-    text-decoration:none;
-
-    padding:14px 38px;
-
-    border-radius:30px;
-
-    font-weight:bold;
-
-    transition:.25s;
-
-}
-
-
-.shop-now:hover{
-
-    background:#718355;
-
-    color:white;
-
-}
-
-
 
 /* ---------- HEADER ---------- */
 
-
 .header{
-
     position:sticky;
-
     top:0;
-
     left:0;
-
     width:100%;
-
     background:#FFFFFF;
-
     display:flex;
-
     align-items:center;
-
     justify-content:space-between;
-
     padding:18px 40px;
-
     box-shadow:0 3px 15px rgba(0,0,0,.08);
-
     z-index:1000;
-
 }
-
 
 .logo img{
-
     height:70px;
-
     display:block;
-
 }
-
 
 .search{
-
     flex:1;
-
     margin:0 40px;
-
 }
-
 
 .search input{
-
     width:100%;
-
     padding:15px 18px;
-
     border:2px solid #B5C99A;
-
     border-radius:14px;
-
     outline:none;
-
     font-size:16px;
-
     transition:.25s;
-
 }
-
 
 .search input:focus{
-
     border-color:#718355;
-
 }
-
 
 .cart-button{
-
     border:none;
-
     background:#B6D084;
-
     color:#0D2818;
-
     padding:14px 26px;
-
     border-radius:14px;
-
     cursor:pointer;
-
     font-size:16px;
-
     font-weight:bold;
-
     transition:.25s;
-
 }
-
 
 .cart-button:hover{
-
     background:#718355;
-
     color:#FFFFFF;
-
 }
-
 
 #cart-count{
-
     margin-left:8px;
-
 }
 
-
-
 /* ---------- PRODUCTS ---------- */
-
 
 .products-grid{
 
     max-width:1450px;
-
     margin:50px auto;
-
     padding:0 30px 60px;
 
     display:grid;
-
     grid-template-columns:repeat(3,1fr);
-
     gap:30px;
 
 }
 
-
 .product-card{
 
     background:#FFFFFF;
-
     border-radius:18px;
-
     overflow:hidden;
 
     border:1px solid #E6E6E6;
@@ -257,7 +106,6 @@ body{
     transition:.25s;
 
 }
-
 
 .product-card:hover{
 
@@ -267,54 +115,45 @@ body{
 
 }
 
-
 .product-image{
 
     width:100%;
-
-    height:170px;
+    height:260px;
 
     background:#EEF2E8;
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
     overflow:hidden;
 
 }
 
-
 .product-image img{
 
     width:100%;
-
     height:100%;
 
     object-fit:cover;
 
 }
 
-
 .product-details{
 
-    padding:18px;
+    padding:24px;
 
 }
 
-
 .product-details h2{
 
-    font-size:20px;
+    font-size:24px;
 
     margin-bottom:20px;
 
     color:#0D2818;
 
 }
-
 
 .product-details label{
 
@@ -327,7 +166,6 @@ body{
     margin-bottom:8px;
 
 }
-
 
 .product-details select{
 
@@ -347,15 +185,11 @@ body{
 
 }
 
-
 .product-details select:focus{
 
     border-color:#718355;
 
-}
-
-
-.price{
+}.price{
 
     font-size:30px;
 
@@ -366,7 +200,6 @@ body{
     margin-bottom:22px;
 
 }
-
 
 .add-cart{
 
@@ -392,7 +225,6 @@ body{
 
 }
 
-
 .add-cart:hover{
 
     background:#718355;
@@ -401,10 +233,7 @@ body{
 
 }
 
-
-
 /* ---------- CART ---------- */
-
 
 #cart-panel{
 
@@ -430,13 +259,11 @@ body{
 
 }
 
-
 #cart-panel h2{
 
     color:#0D2818;
 
 }
-
 
 #cart-panel button{
 
@@ -458,7 +285,6 @@ body{
 
 }
 
-
 #cart-panel button:hover{
 
     background:#718355;
@@ -467,17 +293,13 @@ body{
 
 }
 
-
-
 /* ---------- SCROLLBAR ---------- */
-
 
 ::-webkit-scrollbar{
 
     width:10px;
 
 }
-
 
 ::-webkit-scrollbar-thumb{
 
@@ -487,80 +309,68 @@ body{
 
 }
 
-
 ::-webkit-scrollbar-track{
 
     background:#F5F5F5;
 
 }
 
-
-
 /* ---------- RESPONSIVE ---------- */
-
 
 @media (max-width:1100px){
 
-    .products-grid{
+.products-grid{
 
-        grid-template-columns:repeat(2,1fr);
-
-    }
+grid-template-columns:repeat(2,1fr);
 
 }
 
-
+}
 
 @media (max-width:750px){
 
+.header{
 
-    .header{
+flex-direction:column;
 
-        flex-direction:column;
+padding:20px;
 
-        padding:20px;
+}
 
-    }
+.logo{
 
+margin-bottom:20px;
 
-    .logo{
+}
 
-        margin-bottom:20px;
+.search{
 
-    }
+width:100%;
 
+margin:0 0 20px 0;
 
-    .search{
+}
 
-        width:100%;
+.cart-button{
 
-        margin:0 0 20px 0;
+width:100%;
 
-    }
+}
 
+.products-grid{
 
-    .cart-button{
+grid-template-columns:1fr;
 
-        width:100%;
+padding:20px;
 
-    }
+}
 
+#cart-panel{
 
-    .products-grid{
+width:100%;
 
-        grid-template-columns:1fr;
+right:-100%;
 
-        padding:20px;
-
-    }
-
-
-    #cart-panel{
-
-        width:100%;
-
-        right:-100%;
-
-    }
+}
 
 }
